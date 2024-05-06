@@ -138,12 +138,12 @@ public class Menu {
 					leia.skip("\\R?");
 					titular = leia.nextLine();
 					
-					System.out.println("Digte o Saldo da Conta (R$): ");
+					System.out.println("Digite o Saldo da Conta (R$): ");
 					saldo = leia.nextFloat();
 					
 					switch(tipo) {
 					case 1 -> {
-						System.out.println("Digte o Limite de Crédito (R$): ");
+						System.out.println("Digite o Limite de Crédito (R$): ");
 						limite = leia.nextFloat();
 						
 						contas.atualizar(new ContaCorrente(numero, agencia, tipo, titular, saldo, limite));
@@ -174,7 +174,7 @@ public class Menu {
 				break;
 			case 6:
 				System.out.println(Cores.TEXT_WHITE_BOLD +"Saque\n\n");
-				System.out.println("Digte o Número da Conta: ");
+				System.out.println("Digite o Número da Conta: ");
 				numero = leia.nextInt();
 				
 				do {
@@ -205,7 +205,7 @@ public class Menu {
 				
 				System.out.println("Digite o Número da Conta de Origem: ");
 				numero = leia.nextInt();
-				System.out.println("Digte o Número da Conta de Destino: ");
+				System.out.println("Digite o Número da Conta de Destino: ");
 				numeroDestino = leia.nextInt();
 				
 				do {
